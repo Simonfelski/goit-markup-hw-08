@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
+
+  &__links {
+    color: var(--third-primary-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+    fill: currentColor;
+    position: relative;
+    transition: var(--cubic);
+  }
+
+  &__links-icon {
+    transition: var(--cubic);
+  }
+
+  &__links:hover .contact__links-icon {
+    fill: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  &__links:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+}

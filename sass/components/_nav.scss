@@ -1,0 +1,40 @@
+.nav {
+  border-bottom: 2px solid #ececec;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__one-list {
+    @extend .one-list;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 32px 0;
+    list-style: none;
+  }
+
+  &__menu {
+    color: var(--second-primary-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 0.02em;
+    border-radius: 2px;
+    padding: 32px 0;
+    transition: var(--cubic);
+  }
+
+  &__menu--active {
+    border-bottom: 4px solid var(--primary-color);
+  }
+}
