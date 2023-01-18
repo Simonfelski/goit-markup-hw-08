@@ -17,7 +17,8 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body>
+  <body>    
+
 
     <nav class="nav">
       <div class="nav__container nav__wrapper">
@@ -43,6 +44,14 @@
             +48 111 111 111</a
           >
         </div>
+
+        <button class="menu-toggle js-close-menu">
+          <svg
+          fill="currentColor" width="24" height="24">
+        <use href="images/Toggle.svg#icon-menu_40px"></use>
+        </svg>
+        </button>
+
       </div>
     </nav>
 
@@ -343,6 +352,22 @@
       </section>
     </main>
 
+    <div class="menu-container js-menu-container id=mobile-menu"></div>
+    <button class="menu-toggle js-close-menu">
+      <svg
+      fill="currentColor" width="24" height="24">
+    <use href="images/Toggle.svg#icon-menu_40px"></use>
+    </svg>
+    </button>
+
+    <ul class=”mobile-menu”>
+      <li><a href="" class="link">O nas</a> </li>
+      <li><a href="" class="link">Produkty</a> </li>
+      <li><a href="" class="link">Kontakt</a> </li>
+      <li><a href="" class="link">Kariera</a> </li>
+      </ul>
+    </div>
+
     <footer class="footer">
       <div class="footer__container footer__flex">
         <div>
@@ -483,6 +508,13 @@
   </div>
 
   <script src="./js/modal.js"></script>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
